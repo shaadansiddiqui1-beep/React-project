@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #f4f7fb;
+  --surface-color: #ffffff;
+  --text-color: #111827;
+  --muted-color: #6c757d;
+  --card-color: #ffffff;
+  --header-bg: #0d6efd;
+  --footer-bg: #212529;
+  --footer-link: #adb5bd;
+  --shadow-color: rgba(13, 110, 253, 0.12);
+}
+
+.theme-white {
+  --bg-color: #f4f7fb;
+  --surface-color: #ffffff;
+  --text-color: #111827;
+  --muted-color: #6c757d;
+  --card-color: #ffffff;
+  --header-bg: #0d6efd;
+  --footer-bg: #212529;
+  --footer-link: #adb5bd;
+  --shadow-color: rgba(13, 110, 253, 0.12);
+}
+
+.theme-black {
+  --bg-color: #121212;
+  --surface-color: #1f1f1f;
+  --text-color: #f8f9fa;
+  --muted-color: #ced4da;
+  --card-color: #242424;
+  --header-bg: #000000;
+  --footer-bg: #090909;
+  --footer-link: #ced4da;
+  --shadow-color: rgba(255, 255, 255, 0.08);
+}
+
+.theme-red {
+  --bg-color: #fff1f1;
+  --surface-color: #ffffff;
+  --text-color: #6b0f0f;
+  --muted-color: #8d1f1f;
+  --card-color: #ffffff;
+  --header-bg: #c82333;
+  --footer-bg: #a71d2a;
+  --footer-link: #f8d7da;
+  --shadow-color: rgba(200, 35, 51, 0.12);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+}
+
+.app-wrapper {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.72) 100%);
+  min-height: calc(100vh - 72px);
+}
+
+.section-header p {
+  letter-spacing: 0.08em;
+  color: var(--muted-color);
+}
+
+.section-header h1 {
+  color: var(--text-color);
+}
+
+.todo-form {
+  border-radius: 20px;
+  background: var(--surface-color);
+}
+
+.todo-card {
+  background: var(--card-color);
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 70px var(--shadow-color);
+}
+
+.todo-card h5,
+.todo-card p {
+  color: var(--text-color);
+}
+
+.todo-card .text-muted {
+  color: var(--muted-color) !important;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--footer-bg) !important;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--footer-link) !important;
+}
+
+.footer a:hover {
+  color: #ffffff !important;
+}
+
+.navbar {
+  background-color: var(--header-bg) !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.footer .text-muted {
+  color: var(--footer-link) !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blenk{
+  color:red
+}
