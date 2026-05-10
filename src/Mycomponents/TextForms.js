@@ -24,7 +24,7 @@ export default function TextForms(props) {
    <textarea className="form-control" value ={text} onChange={handleUpClick} style={{backgroundColor:props.mode==='light'?'grey':'white'}} id="myBox" rows="8"></textarea>
   </div>
 </form>
-<button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to uppercase</button>
+<button className="btn btn-primary mx-1" onClick={handleUpClick}>Delete</button>
 <button className="btn btn-primary mx-1" onClick={handleclearClick}>Clear text</button>
     </div>
     <div className="container my-3">
